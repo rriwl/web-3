@@ -8,35 +8,6 @@ a{
 	color: black;
 }
 
-@media only screen and (max-width: 600px) {
-	.wrapped{
-		
-		background: #AFEEEE;
-		display: flex;
-		flex-direction: column;
-		max-width: 960px;
-		padding-left: 16px;
-		padding-right: 16px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}	
-}
-
-@media only screen and (max-width: 600px) {
-	.menu a {
-		text-align: center;
-	}
-	.menu {
-		
-		flex-direction: column;
-		align-items: center;
-		
-		margin-top: 40px;
-        margin-left: 50px;
-	}
-}
-
 .wrapped{
 		
 	background: #AFEEEE;
@@ -59,6 +30,7 @@ b{
 }
 
 .menu{ 
+	
 	text-align: right; 
 	font-size: 17px; 
 	padding-top: 10px; 
@@ -81,7 +53,7 @@ b{
 	align-items: center; 
 	width:100%;  
 	margin: 0; 
-   } 
+} 
 	
 table {
 	 border-collapse: collapse;
@@ -110,4 +82,98 @@ tr:nth-child(odd) {
 
 #form {
 	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+		font-size: 36px;
+		padding-top: 10px;
+		background-color: #2F4F4F;
+	}
+	
+	a{
+		color: black;
+	}
+	
+	.wrapped{
+		order: 2;
+		background: #AFEEEE;
+		display: flex;
+        flex-direction: column;
+		max-width: 960px;
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	.header{
+		width:100%; 
+		background: #008080;
+			height:120px;
+	}
+	
+	b{
+		color: white;
+	}
+
+	.menu a {
+        text-align: center;
+		display: block;
+    }
+    .menu {
+        
+        flex-direction: column;
+        align-items: center;
+        display: block; 
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+	
+	#footer {
+		background-color: #2F4F4F;
+		color: white;
+		padding: 20px;
+		width:100%; 
+		margin: 0;
+	}
+	
+	.container { 
+		order: 1;
+		display: flex; 
+		justify-content: center; 
+		align-items: center; 
+		width:100%;  
+		margin: 0; 
+	} 
+		
+	table {
+		 border-collapse: collapse;
+	}
+	   
+	th, td { 
+		padding: 10px; 
+		border: 1px solid black;
+	} 
+	
+	tr:nth-child(even) { 
+		background-color: #DCDCDC; 
+	} 
+		
+	tr:nth-child(odd) { 
+		background-color: #A9A9A9; 
+	}
+	
+	#links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	
+	#form {
+		order: 3;
+		text-align: center;
+	}
 }
