@@ -64,7 +64,6 @@ th, td {
 	border: 1px solid black;
 } 
 
-	
 tr:nth-child(even) { 
 	background-color: #DCDCDC; 
 } 
@@ -123,7 +122,6 @@ tr:nth-child(odd) {
 		display: block;
     }
     .menu {
-        
         flex-direction: column;
         align-items: center;
         display: block; 
@@ -140,8 +138,8 @@ tr:nth-child(odd) {
 	}
 	
 	.container { 
-		order: 1;
-		display: flex; 
+		order: -1;
+		padding-top: 10px;
 		justify-content: center; 
 		align-items: center; 
 		width:100%;  
@@ -166,7 +164,6 @@ tr:nth-child(odd) {
 	}
 	
 	#links {
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
